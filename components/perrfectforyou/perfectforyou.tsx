@@ -4,15 +4,15 @@ export default function PerfectForYou() {
     return (
         <>
             <section className="perfectforyou">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="text-white">
+                <div className="">
+                    <div className="">
+                        <div className="">
+                            <div className="container text-white">
                                 <div className="titles-unica">
                                     <h1 className="perfect-title">Perfeita para você!</h1>
                                 </div>
-                                <div className="information mt-5">
-                                    <span className='container flex text-center'>Há mais de 22 anos, a Faculdade Única transforma vidas por meio da educação. Com base na ética e na responsabilidade social, com um preço justo e acessível, utilizamos a tecnologia e a inovação para ampliar as possibilidades de ensino de milhares de alunos espalhados por todo o país.</span>
+                                <div className=" information mt-5">
+                                    <span className=' flex text-center'>Há mais de 22 anos, a Faculdade Única transforma vidas por meio da educação. Com base na ética e na responsabilidade social, com um preço justo e acessível, utilizamos a tecnologia e a inovação para ampliar as possibilidades de ensino de milhares de alunos espalhados por todo o país.</span>
                                 </div>
                                 <div className='flex align-center justify-center mt-7 w-auto h-48 gap-36'>
 
