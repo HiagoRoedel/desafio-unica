@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.imagem{
+    background-image: linear-gradient(90deg, rgb(0 0 0 / 40%) 2%, rgb(0 0 0 / 85%) 103%, rgba(0, 222, 264, 0) 102%),
+    url("/main-banner.webp") ;
+    width: 100%;
+    /* filter: blur(16px) */
+}
+
+.titlemainbanner{
+    font-family: Krona One;
+    position: absolute;
+    top: 72%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.category-title{
+    font-size: 3.5rem;
+    line-height: 0;
+    z-index: 9999;
+}
+
+.titlemainbanner h1 {
+    font-size: 4rem;
+    line-height: 120%;
+    letter-spacing: -5px;
+    z-index: 9999;
+}
+
+.main-banner-pos-graduacao {
+    padding-bottom: 708px;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    background-size: cover;
+    align-items: center;
+}
+
+.banner-top-section {
+    margin-top: -6rem;
+}
