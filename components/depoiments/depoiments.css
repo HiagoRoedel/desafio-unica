@@ -1,0 +1,10 @@
+
+.cordefundo {
+    background-color: #7500FF;
+}
+
+.usarimagem{
+    background-image: url(/depoiments.webp);
+    background-repeat: no-repeat;
+    background-position: right center;
+}

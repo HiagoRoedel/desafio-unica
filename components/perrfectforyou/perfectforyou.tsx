@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function PerfectForYou() {
     return (
         <>
-            <section className="perfectforyou">
-                <div className="">
-                    <div className="">
+            <section className="perfectforyou w-auto">
+                <div className="flex flex-wrap">
+                    <div className="flex flex-col w-full">
                         <div className="">
                             <div className="container text-white">
                                 <div className="titles-unica">

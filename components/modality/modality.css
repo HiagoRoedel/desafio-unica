@@ -1,0 +1,35 @@
+.imagens{
+    width: 100%;
+    min-height: 700px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.graduacao{
+    background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/graduacao.webp);
+}
+
+.pos-graduacao{
+    background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/pos-graduacao.webp);
+}
+
+.segunda-graduacao{
+    background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/pos-online.webp);
+}
+
+.disciplina-isolada{
+    background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/disciplina-isolada.webp);
+}
+
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+

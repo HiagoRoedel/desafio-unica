@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+// import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@nextui-org/react";
 import FirstSectionHeader from "./FirstSectionHeader/firstsectionheader";
 import "./header.css";
