@@ -22,7 +22,7 @@ export default function Header() {
             </div>
 
             <div className={`bg-black shadow-lg bg-opacity-80 backdrop-filter backdrop-blur-lg lg:bg-transparent lg:backdrop-blur-xl ${darkMode ? 'dark:bg-gray-900 dark:bg-opacity-80 dark:backdrop-filter dark:backdrop-blur-lg' : ''}`}>
-                <div className="lg:hidden px-4 py-2 flex items-center justify-center">
+                <div className="lg:hidden px-4 py-2 flex items-center justify-center bg-black">
                     <Image
                         src="/logo-unica.webp"
                         width={182}

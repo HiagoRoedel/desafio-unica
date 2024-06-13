@@ -12,6 +12,7 @@ export default function Banner() {
                     <h1>FACULDADE ÚNICA</h1>
                 </div>
         </section>
+
         </>
     )
 }
