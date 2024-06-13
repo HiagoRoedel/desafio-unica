@@ -11,7 +11,7 @@ export default function Construct() {
                             <h1 className='text-white text-3xl lg:text-4xl font-bold mb-4'>
                                 Construa seu amanhã conosco
                             </h1>
-                            <p className='text-white text-base lg:text-lg'>
+                            <p className='text-white text-base lg:text-lg definirfonte'>
                                 Com foco em inovação e qualidade, seja nos cursos presenciais ou online, utilizamos as mais modernas tecnologias para uma comunicação mais eficiente e eficaz entre professor e aluno, destinados à formação de profissionais qualificados, capazes de transformar a realidade socioeconômica do país.
                             </p>
                         </div>

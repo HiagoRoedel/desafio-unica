@@ -15,7 +15,7 @@
 
 .pos-graduacao{
     background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/pos-graduacao.webp);
-    background-position: center;
+    background-position: 70% center;
 }
 
 .segunda-graduacao{
@@ -23,8 +23,9 @@
 }
 
 .disciplina-isolada{
-    background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/disciplina-isolada.webp);
-  
+    background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/disciplina-isolada-certo.webp);
+    background-size: cover;
+
 }
 
 

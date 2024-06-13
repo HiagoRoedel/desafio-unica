@@ -16,7 +16,7 @@ export default function Header() {
     };
 
     return (
-        <div className={`container mx-auto ${darkMode ? 'dark' : ''}`}>
+        <div className={`${darkMode ? 'dark' : ''}`}>
             <div>
                <FirstSectionHeader />
             </div>
