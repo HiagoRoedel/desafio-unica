@@ -1,87 +1,117 @@
+'use client'
+
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@nextui-org/react";
+import { useState } from 'react';
 import FirstSectionHeader from "./FirstSectionHeader/firstsectionheader";
-import "./header.css";
+import { WiMoonAltThirdQuarter } from "react-icons/wi";
+import { IoMdSunny } from "react-icons/io";
+
 
 export default function Header() {
-    return (
-        <div className="">
-            <FirstSectionHeader />
+    const [darkMode, setDarkMode] = useState(false);
 
-            <header className="relative z-[999999] backdrop-blur header">
-                <nav className="container mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 font-poppins">
-                    <div className="flex lg:flex-1">
-                        <Image
-                            src="/logo-unica.webp"
-                            width={182}
-                            height={182}
-                            alt="faculdade unica"
-                            className="h-8 w-auto"
-                        />
-                    </div>
-                    <div className="relative flex lg:flex-1">
-                        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg
-                                className="w-4 h-4 text-gray-500 dark:text-gray-400"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                                />
-                            </svg>
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
+    return (
+        <div className={`container mx-auto ${darkMode ? 'dark' : ''}`}>
+            <div>
+               <FirstSectionHeader />
+            </div>
+
+            <div className={`bg-black shadow-lg bg-opacity-80 backdrop-filter backdrop-blur-lg lg:bg-transparent lg:backdrop-blur-xl ${darkMode ? 'dark:bg-gray-900 dark:bg-opacity-80 dark:backdrop-filter dark:backdrop-blur-lg' : ''}`}>
+                <div className="lg:hidden px-4 py-2 flex items-center justify-center">
+                    <Image
+                        src="/logo-unica.webp"
+                        width={182}
+                        height={182}
+                        alt="Faculdade Única"
+                        className="h-12 w-auto"
+                    />
+                    <button className="ml-4 text-yellow-500 dark:text-gray-400" onClick={toggleDarkMode}>
+                            {darkMode ? (
+                                <WiMoonAltThirdQuarter />
+                            ) : (
+                                <IoMdSunny />
+                            )}
+                        </button>
+                </div>
+
+                <header className="container mx-auto px-4 lg:px-8 pb-4 pt-8 hidden lg:block">
+                    <nav className="flex items-center justify-between">
+                        <div className="flex-shrink-0">
+                            <Image
+                                src="/logo-unica.webp"
+                                width={182}
+                                height={182}
+                                alt="Faculdade Única"
+                                className="h-12 w-auto"
+                            />
                         </div>
-                        <input
-                            type="search"
-                            id="default-search"
-                            className="shadow-sm block w-full p-4 pl-10 text-sm text-slate-100 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Pesquise por um curso..."
-                            required
-                        />
-                    </div>
-                    <div className="flex space-x-6">
-                        <Button
-                            disableRipple
-                            className="bg-transparent p-0 font-bold"
-                            radius="sm"
-                            variant="light"
-                        >
-                            <span className="hover-effect text-sm xl:text-base text-white">Indicação Premiada</span>
-                           
-                        </Button>
-                        <Button
-                            disableRipple
-                            className="bg-transparent p-0"
-                            radius="sm"
-                            variant="light"
-                        >
-                            <span className="hover-effect text-sm xl:text-base text-white">Central de Ajuda</span>
-                           
-                        </Button>
-                        <Button
-                            disableRipple
-                            className="bg-transparent p-0 border border-zinc-950 flex items-center gap-2 rounded-[6px] px-4 py-2 font-semibold"
-                            radius="sm"
-                            variant="light"
-                        >
-                            <span className="hover-effect text-sm xl:text-base font-semibold">Já sou aluno</span>
-                            {/* <FontAwesomeIcon
-                                className="ml-1"
-                                icon={faAngleDown}
-                                style={{ fontSize: "12px" }}
-                            /> */}
-                        </Button>
-                    </div>
-                </nav>
-            </header>
+                        <div className="flex lg:flex-1 justify-center hidden lg:block">
+                            <input
+                                type="search"
+                                id="default-search"
+                                className={`block w-full px-4 py-2 text-sm placeholder-gray-400 bg-white border border-gray-300 focus:outline-none focus:ring-purple-800 focus:border-purple-800 ${darkMode ? 'dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' : ''}`}
+                                placeholder="Pesquisar por um curso..."
+                                required
+                            />
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <Button
+                                disableRipple
+                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                radius="sm"
+                                variant="light"
+                            >
+                                Nossas Áreas
+                            </Button>
+                            <Button
+                                disableRipple
+                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                radius="sm"
+                                variant="light"
+                            >
+                                Vidas Transformadas
+                            </Button>
+                            <Button
+                                disableRipple
+                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                radius="sm"
+                                variant="light"
+                            >
+                                Blog
+                            </Button>
+                            <Button
+                                disableRipple
+                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                radius="sm"
+                                variant="light"
+                            >
+                                FAQ
+                            </Button>
+                            <Button
+                                disableRipple
+                                className={`hover-effect border border-white px-4 py-2 text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                radius="sm"
+                                variant="light"
+                            >
+                                Já sou aluno
+                            </Button>
+                        </div>
+                        
+                        <button className="ml-4" onClick={toggleDarkMode}>
+                            {darkMode ? (
+                                <WiMoonAltThirdQuarter />
+                            ) : (
+                                <IoMdSunny />
+                            )}
+                        </button>
+                    </nav>
+                </header>
+            </div>
         </div>
     );
 }

@@ -9,6 +9,9 @@ import Future from '../components/future/future'
 import Education from '../components/education/education'
 import Modality from '../components/modality/modality'
 import Depoiments from '../components/depoiments/depoiments'
+import Faq from '../components/faq/faq'
+import List from '../components/list/list'
+import Footer from '../components/footer/footer'
 
 export default function Page() {
   const headersList = headers()
@@ -16,6 +19,7 @@ export default function Page() {
  
   return(
     <>
+   
     <Header />
     <Banner />
     <Gif />
@@ -25,6 +29,11 @@ export default function Page() {
     <Education />
     <Modality />
     <Depoiments />
+    <Faq />
+    <List />
+    <Footer />
+   
+    
     </>
   )
 }
