@@ -23,7 +23,7 @@ html, body {
 }
 
 .definirfonte{
-  font-family: "Krona One";
+  font-family: 'Krona One';
 }
 
 :root {
@@ -42,7 +42,7 @@ html, body {
 }
 
 .criando{
-  font-family: "Krona One";
+  font-family: 'Krona One';
   text-align: center;
   font-size: 1.2rem;
 }

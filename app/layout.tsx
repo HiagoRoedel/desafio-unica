@@ -1,3 +1,5 @@
+import '../util/fontImports'
+
 export default function RootLayout({
     children,
   }: {
