@@ -1,17 +1,16 @@
-// import { MongoClient } from "mongodb";
+ import { MongoClient } from "mongodb";
 
-// const database_url = process.env.DATABASE_URL
+ const database_url = process.env.DATABASE_URL as string
 
-// const client = new MongoClient(database_url, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// })
+const client = new MongoClient(database_url, {
+    
+ })
 
-// export default async function connect(){
-//     client.connect()
+ export default async function connect(){
+     client.connect()
 
-//     const db = client.db("clientes")
+     const db = client.db("clientes")
 
-//     return {db, client}
-// }
+     return {db, client}
+ }
 

@@ -1,14 +1,14 @@
-// import connect from "../../util/database2"
+import connect from "../../util/database2";
+import { Response } from 'express';
 
-// export default async function handler(req, res){
- 
-//     const {db} = await connect()
 
-//     const user = {
-//         modality: "pos-graduacao"
-//     }
+export default async function handler(res: Response) {
+    const { db } = await connect();
 
-//     const response = await db.collection("depoiments").findOne(user)
-
-//     res.status(200).json(response)
-// }
+    try {
+        const response = await db.collection("customers").find().toArray();
+        res.status(200).json(response);
+    } catch (error) {
+        res.status(500).json({ message: "Erro ao buscar dados", error });
+    }
+}
