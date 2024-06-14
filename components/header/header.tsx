@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
@@ -6,7 +6,7 @@ import { useState } from 'react';
 import FirstSectionHeader from "./FirstSectionHeader/firstsectionheader";
 import { WiMoonAltThirdQuarter } from "react-icons/wi";
 import { IoMdSunny } from "react-icons/io";
-
+import { FaChevronDown } from "react-icons/fa"; // Importe o ícone
 
 export default function Header() {
     const [darkMode, setDarkMode] = useState(false);
@@ -18,11 +18,11 @@ export default function Header() {
     return (
         <div className={`${darkMode ? 'dark' : ''}`}>
             <div>
-               <FirstSectionHeader />
+                <FirstSectionHeader />
             </div>
 
             <div className={`bg-black shadow-lg bg-opacity-80 backdrop-filter backdrop-blur-lg lg:bg-transparent lg:backdrop-blur-xl ${darkMode ? 'dark:bg-gray-900 dark:bg-opacity-80 dark:backdrop-filter dark:backdrop-blur-lg' : ''}`}>
-                <div className="lg:hidden px-4 py-2 flex items-center justify-center bg-black">
+                <div className={`lg:hidden px-4 py-2 flex items-center justify-center bg-black ${darkMode ? 'bg-black' : ''}`}>
                     <Image
                         src="/logo-unica.webp"
                         width={182}
@@ -31,12 +31,12 @@ export default function Header() {
                         className="h-12 w-auto"
                     />
                     <button className="ml-4 text-yellow-500 dark:text-gray-400" onClick={toggleDarkMode}>
-                            {darkMode ? (
-                                <WiMoonAltThirdQuarter />
-                            ) : (
-                                <IoMdSunny />
-                            )}
-                        </button>
+                        {darkMode ? (
+                            <WiMoonAltThirdQuarter />
+                        ) : (
+                            <IoMdSunny />
+                        )}
+                    </button>
                 </div>
 
                 <header className="container mx-auto px-4 lg:px-8 pb-4 pt-8 hidden lg:block">
@@ -50,7 +50,7 @@ export default function Header() {
                                 className="h-12 w-auto"
                             />
                         </div>
-                        <div className="flex lg:flex-1 justify-center hidden lg:block">
+                        <div className="flex lg:flex-1 justify-center hidden lg:block px-10">
                             <input
                                 type="search"
                                 id="default-search"
@@ -62,15 +62,16 @@ export default function Header() {
                         <div className="flex items-center space-x-4">
                             <Button
                                 disableRipple
-                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                className={`text-white transition duration-300 ease-in-out hover:text-purple-600 text-sm xl:text-base font-semibold focus:outline-none ${darkMode ? 'dark:text-white' : 'text-white'} flex items-center`} // Use 'focus:outline-none'
                                 radius="sm"
                                 variant="light"
                             >
                                 Nossas Áreas
+                                <FaChevronDown className="ml-2" /> {/* Adicione o ícone */}
                             </Button>
                             <Button
                                 disableRipple
-                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                className={`text-white transition duration-300 ease-in-out hover:text-purple-600 text-sm xl:text-base font-semibold focus:outline-none ${darkMode ? 'dark:text-white' : 'text-white'} `}
                                 radius="sm"
                                 variant="light"
                             >
@@ -78,7 +79,7 @@ export default function Header() {
                             </Button>
                             <Button
                                 disableRipple
-                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                className={`text-white transition duration-300 ease-in-out hover:text-purple-600 text-sm xl:text-base font-semibold focus:outline-none ${darkMode ? 'dark:text-white' : 'text-white'} `}
                                 radius="sm"
                                 variant="light"
                             >
@@ -86,7 +87,7 @@ export default function Header() {
                             </Button>
                             <Button
                                 disableRipple
-                                className={`hover-effect text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                className={`text-white transition duration-300 ease-in-out hover:text-purple-600 text-sm xl:text-base font-semibold focus:outline-none ${darkMode ? 'dark:text-white' : 'text-white'} `}
                                 radius="sm"
                                 variant="light"
                             >
@@ -94,15 +95,16 @@ export default function Header() {
                             </Button>
                             <Button
                                 disableRipple
-                                className={`hover-effect border border-white px-4 py-2 text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
+                                className={`text-white transition duration-300 ease-in-out hover:text-purple-600 border border-white px-4 py-2 text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
                                 radius="sm"
                                 variant="light"
+                                style={{ outline: 'none', border: '1px solid white' }} // Estilos para manter a borda
                             >
                                 Já sou aluno
                             </Button>
                         </div>
                         
-                        <button className="ml-4" onClick={toggleDarkMode}>
+                        <button className="ml-4 text-white" onClick={toggleDarkMode}>
                             {darkMode ? (
                                 <WiMoonAltThirdQuarter />
                             ) : (

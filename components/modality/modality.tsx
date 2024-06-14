@@ -13,7 +13,7 @@ export default function Modality() {
                     <div className="image-container">
                         <div className="imagens graduacao absolute inset-x-0 bottom-0 text-center flex flex-col items-center justify-end">
                             <div className="mb-48 definirfonte tamanho">
-                            <h1 className="text-white text-3xl mb-2">GRADUAÇÃO</h1>
+                            <h1 className="text-white text-3xl mb-2 text-mobile">GRADUAÇÃO</h1>
                             <button className="text-sm px-6 py-2 border-2 border-white text-white bg-transparent rounded">
                                 Saiba Mais
                             </button>
@@ -24,7 +24,7 @@ export default function Modality() {
                     <div className="image-container">
                         <div className="imagens pos-graduacao absolute inset-x-0 bottom-0 text-center flex flex-col items-center justify-end">
                         <div className="mb-48 definirfonte tamanho">
-                            <h1 className="text-white text-3xl mb-2">PÓS ONLINE</h1>
+                            <h1 className="text-white text-3xl mb-2 text-mobile">PÓS ONLINE</h1>
                             <button className="text-sm px-6 py-2 border-2 border-white text-white bg-transparent rounded">
                                 Saiba Mais
                             </button>
@@ -34,7 +34,7 @@ export default function Modality() {
                     <div className="image-container">
                         <div className="imagens segunda-graduacao absolute inset-x-0 bottom-0 text-center flex flex-col items-center justify-end">
                         <div className="mb-48 definirfonte tamanho">
-                            <h1 className="text-white text-3xl mb-2">SEGUNDA GRADUAÇÃO</h1>
+                            <h1 className="text-white text-3xl mb-2 text-mobile">SEGUNDA GRADUAÇÃO</h1>
                             <button className="text-sm px-6 py-2 border-2 border-white text-white bg-transparent rounded">
                                 Saiba Mais
                             </button>
@@ -44,7 +44,7 @@ export default function Modality() {
                     <div className="image-container">
                         <div className="imagens disciplina-isolada absolute inset-x-0 bottom-0 text-center flex flex-col items-center justify-end">
                         <div className="mb-48 definirfonte tamanho">
-                            <h1 className="text-white text-3xl mb-2">DISCIPLINA ISOLADA</h1>
+                            <h1 className="text-white text-3xl mb-2 text-mobile">DISCIPLINA ISOLADA</h1>
                             <button className="text-sm px-6 py-2 border-2 border-white text-white bg-transparent rounded">
                                 Saiba Mais
                             </button>

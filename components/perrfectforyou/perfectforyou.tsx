@@ -30,7 +30,7 @@ export default function PerfectForYou() {
                     <div className="col-lg-4 p-4 card-course border flex justify-center">
                         <div className="other-card text-center">
                             <Image
-                                src="/diploma-icon.webp"
+                                src="/Brasil.webp"
                                 alt="diploma"
                                 width={50}
                                 height={50}
@@ -43,7 +43,7 @@ export default function PerfectForYou() {
                     <div className="col-lg-4 p-4 card-course border flex justify-center">
                         <div className="other-card text-center">
                             <Image
-                                src="/diploma-icon.webp"
+                                src="/curso-online.webp"
                                 alt="diploma"
                                 width={50}
                                 height={50}
@@ -51,6 +51,7 @@ export default function PerfectForYou() {
                             />
                             <h1 className="textStyle definirfonte">+ de 900 cursos em</h1>
                             <span className="textStyle definirfonte">diversas modalidades</span>
+                            <span className="textStyle definirfonte">de ensino</span>
                         </div>
                     </div>
                 </div>

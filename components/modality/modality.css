@@ -25,11 +25,7 @@
 .disciplina-isolada{
     background-image: linear-gradient(180deg, rgba(209, 147, 8, 0), rgba(0, 0, 0, .608) 84%), url(/disciplina-isolada-certo.webp);
     background-size: cover;
-
 }
-
-
-
 
 .image-container img {
     width: 100%;
@@ -37,3 +33,12 @@
     object-fit: cover;
 }
 
+@media (max-width: 768px){
+    .pos-graduacao{
+        background-position: 66% center;
+    }
+    .text-mobile{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}

@@ -4,6 +4,7 @@
  .title{
     font-family: Krona One;
     font-size: 1rem;
+    text-align: center;
 }
 
 .perfect-style{
@@ -19,11 +20,6 @@
     font-family: Krona One;
 } 
 
-/* .imagem-alt{
-    display: flex;
-    justify-content: flex-end !important;
-} */
-
  .textos {
     display: flex;
     justify-content: space-around !important;
@@ -31,18 +27,6 @@
     width: 100%;
 }
 
-.ajust-span{
-    font-family: Poppins;
-    font-size: 17px;
-    line-height: 125%;
-    /* letter-spacing: -5px; */
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 68%;
-    height: 117px;
-}
 
 
 .tamanho{

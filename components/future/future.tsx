@@ -6,7 +6,7 @@ export default function Future() {
             <div className="container mx-auto">
                 <div className="flex flex-col items-center">
                     <div className="flex flex-col items-center justify-center bg-black">
-                        <div className="title text-white mt-12 mb-3">
+                        <div className="title text-white mt-12 mb-5">
                             <h1>Abra novas portas para o seu futuro</h1>
                         </div>
                         <div className="flex flex-wrap justify-center gap-4">
