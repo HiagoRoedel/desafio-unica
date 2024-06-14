@@ -8,13 +8,13 @@ html, body {
 }
 
 .dark-theme {
-  --background-color: #1a1a1a; /* fundo escuro */
-  --text-color: #ffffff; /* texto branco */
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
 }
 
 .light-theme {
-  --background-color: #ffffff; /* fundo claro */
-  --text-color: #000000; /* texto preto */
+  --background-color: #ffffff;
+  --text-color: #000000;
 }
 
 .definirfonte{

@@ -1,7 +1,5 @@
 import connect from "../../util/database2";
 
-
-
 export default async function handler(req: any, res:any) {
     const { db } = await connect();
 

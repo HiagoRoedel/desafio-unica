@@ -1,12 +1,11 @@
 'use client';
-
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { useState } from 'react';
 import FirstSectionHeader from "./FirstSectionHeader/firstsectionheader";
 import { WiMoonAltThirdQuarter } from "react-icons/wi";
 import { IoMdSunny } from "react-icons/io";
-import { FaChevronDown } from "react-icons/fa"; // Importe o ícone
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Header() {
     const [darkMode, setDarkMode] = useState(false);
@@ -67,7 +66,7 @@ export default function Header() {
                                 variant="light"
                             >
                                 Nossas Áreas
-                                <FaChevronDown className="ml-2" /> {/* Adicione o ícone */}
+                                <FaChevronDown className="ml-2" />
                             </Button>
                             <Button
                                 disableRipple
@@ -98,12 +97,12 @@ export default function Header() {
                                 className={`text-white transition duration-300 ease-in-out hover:text-purple-600 border border-white px-4 py-2 text-sm xl:text-base font-semibold ${darkMode ? 'dark:text-white' : 'text-white'} `}
                                 radius="sm"
                                 variant="light"
-                                style={{ outline: 'none', border: '1px solid white' }} // Estilos para manter a borda
+                                style={{ outline: 'none', border: '1px solid white' }}
                             >
                                 Já sou aluno
                             </Button>
                         </div>
-                        
+
                         <button className="ml-4 text-white" onClick={toggleDarkMode}>
                             {darkMode ? (
                                 <WiMoonAltThirdQuarter />

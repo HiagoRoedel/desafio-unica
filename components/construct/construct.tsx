@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Header from '../header/header';
+
 export default function Construct() {
-    
     return (
         <div className='bg-black'>
             <div className="container mx-auto px-4 lg:px-8 py-8">

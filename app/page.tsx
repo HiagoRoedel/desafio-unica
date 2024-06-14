@@ -1,5 +1,5 @@
-import { headers } from 'next/headers'
 import './globals.css'
+import { headers } from 'next/headers'
 import Header from '../components/header/header'
 import Banner from '../components/mainBanner/banner'
 import Gif from '../components/gif/gif'
@@ -16,24 +16,21 @@ import Footer from '../components/footer/footer'
 export default function Page() {
   const headersList = headers()
   const referer = headersList.get('referer')
- 
-  return(
+
+  return (
     <>
-   
-    <Header />
-    <Banner />
-    <Gif />
-    <PerfectForYou />
-    <Construct />
-    <Future />
-    <Education />
-    <Modality />
-    <Depoiments />
-    <Faq />
-    <List />
-    <Footer />
-   
-    
+      <Header />
+      <Banner />
+      <Gif />
+      <PerfectForYou />
+      <Construct />
+      <Future />
+      <Education />
+      <Modality />
+      <Depoiments />
+      <Faq />
+      <List />
+      <Footer />
     </>
   )
 }
