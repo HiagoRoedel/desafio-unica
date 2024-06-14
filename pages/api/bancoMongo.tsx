@@ -1,8 +1,8 @@
 import connect from "../../util/database2";
-import { Response } from 'express';
 
 
-export default async function handler(res: Response) {
+
+export default async function handler(req: any, res:any) {
     const { db } = await connect();
 
     try {
