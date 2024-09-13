@@ -1,3 +1,3 @@
-### Projeto para aprendizado Grupo Prominas
+### Teste para o Grupo Prominas
 
 ## Tecnológias Utilizadas: NextJS, Vercel, TypeScript
